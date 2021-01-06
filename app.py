@@ -3,7 +3,7 @@
 import pandas as pd
 data = pd.read_excel('cred.xlsx')
 data = data.set_index('Name',1)
-display(data)
+
 
 from flask import Flask, request, jsonify
 app = Flask(__name__)
